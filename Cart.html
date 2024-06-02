@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardwarez</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Hardwarez Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="Store.html">Home</a></li>
+            
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hammer</td>
+                        <td>
+                            <input type="number" value="0" min="1" class="quantity">
+                        </td>
+                        <td class="price">$10.00</td>
+                        <td class="total">$10.00</td>
+                        <td>
+                            <button class="remove">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drill</td>
+                        <td>
+                            <input type="number" value="0" min="1" class="quantity">
+                        </td>
+                        <td class="price">$15.00</td>
+                        <td class="total">$30.00</td>
+                        <td>
+                            <button class="remove">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Screwdriver</td>
+                        <td>
+                            <input type="number" value="0" min="1" class="quantity">
+                        </td>
+                        <td class="price">$5.00</td>
+                        <td class="total">$10.00</td>
+                        <td>
+                            <button class="remove">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td colspan="2" class="cart-total">$40.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="checkout">
+                <button>Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hardwarez</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
